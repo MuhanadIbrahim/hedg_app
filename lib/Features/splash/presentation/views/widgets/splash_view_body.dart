@@ -1,6 +1,7 @@
-
-
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
+import 'package:hedg_app/Features/onboarding/presentaion/view/onboarding1.dart';
 import 'package:hedg_app/Features/splash/presentation/views/widgets/sliding_text.dart';
 import 'package:hedg_app/core/utils/app_images.dart';
 
@@ -35,11 +36,22 @@ class _SplashViewBodyState extends State<SplashViewBody>
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Image.asset(Assets.imagesGreenlogo),
-        const SizedBox(
-          height: 4,
+        const Spacer(
+          flex: 1,
         ),
-        SlidingText(slidingAnimation: slidingAnimation)
+        Image.asset(
+          Assets.imagesGreenlogo,
+          width: 79.55,
+          height: 93.21,
+          fit: BoxFit.contain,
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        SlidingText(slidingAnimation: slidingAnimation),
+        const Spacer(
+          flex: 1,
+        ),
       ],
     );
   }
@@ -48,9 +60,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
     Future.delayed(
       const Duration(seconds: 2),
       () {
-       
-        // Get.to(() => const HomeView(),
-        //     transition: Transition.fade, duration: kTabScrollDuration);
+        Get.to(() => const Onboarding1Screan(),
+            transition: Transition.fade, duration: kTabScrollDuration);
       },
     );
   }
