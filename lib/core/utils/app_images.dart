@@ -59,7 +59,7 @@ class Assets {
   /// Assets for imagesOnboarding background1
   /// assets/images/onboarding background1.svg
   static const String imagesOnboardingbackground1 =
-      "assets/images/onboarding background1.svg";
+      "assets/images/onboardingbackground1.png";
 
   /// Assets for imagesOnboarding background2
   /// assets/images/onboarding background2.svg

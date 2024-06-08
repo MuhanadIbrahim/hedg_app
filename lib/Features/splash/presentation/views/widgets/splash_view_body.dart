@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:hedg_app/Features/onboarding/presentaion/view/onboarding1.dart';
 import 'package:hedg_app/Features/splash/presentation/views/widgets/sliding_text.dart';
@@ -60,6 +59,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
     Future.delayed(
       const Duration(seconds: 2),
       () {
+        // Navigator.push(context,
+        //     MaterialPageRoute(builder: (_) => const Onboarding1Screan()));
         Get.to(() => const Onboarding1Screan(),
             transition: Transition.fade, duration: kTabScrollDuration);
       },

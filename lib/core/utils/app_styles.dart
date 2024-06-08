@@ -43,4 +43,17 @@ abstract class AppStyles {
       fontSize: 18,
       fontFamily: 'Poppins',
       fontWeight: FontWeight.w500);
+
+  static const TextStyle styleBold16 = TextStyle(
+      color: Color(0xFF00BF54),
+      fontSize: 16,
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w700);
+
+  static const TextStyle styleBold20 = TextStyle(
+    color: Color(0xFF00BF54),
+    fontSize: 20,
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w700,
+  );
 }
