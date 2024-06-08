@@ -61,7 +61,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       () {
         // Navigator.push(context,
         //     MaterialPageRoute(builder: (_) => const Onboarding1Screan()));
-        Get.to(() => const Onboarding1Screan(),
+        Get.to(() => const Onboarding1View(),
             transition: Transition.fade, duration: kTabScrollDuration);
       },
     );

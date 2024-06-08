@@ -64,12 +64,12 @@ class Assets {
   /// Assets for imagesOnboarding background2
   /// assets/images/onboarding background2.svg
   static const String imagesOnboardingbackground2 =
-      "assets/images/onboarding background2.svg";
+      "assets/images/onboarding_background2.png";
 
   /// Assets for imagesOnboarding background3
   /// assets/images/onboarding background3.svg
   static const String imagesOnboardingbackground3 =
-      "assets/images/onboarding background3.svg";
+      "assets/images/onboarding_background3.png";
 
   /// Assets for imagesOnboarding continue button
   /// assets/images/onboarding continue button.svg
