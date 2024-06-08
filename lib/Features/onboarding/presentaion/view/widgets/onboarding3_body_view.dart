@@ -15,12 +15,14 @@ class Onboarding3BodyView extends StatelessWidget {
       children: <Widget>[
         Padding(
           padding: EdgeInsets.only(
+            top: MediaQuery.of(context).size.height * 0.1,
             bottom: MediaQuery.of(context).size.height * 0.39,
+            right: MediaQuery.of(context).size.width * 0.2,
           ),
           child: Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/onboarding_background3.png'),
+                image: AssetImage(Assets.imagesOnboardingbackground3),
                 fit: BoxFit.contain,
               ),
             ),
@@ -30,7 +32,7 @@ class Onboarding3BodyView extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.13,
+                height: MediaQuery.of(context).size.height * 0.22,
               ),
               SvgPicture.asset(Assets.imagesOnboardinglogo3),
               SizedBox(
