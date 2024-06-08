@@ -48,19 +48,37 @@ class Onboarding1Screan extends StatelessWidget {
               ),
               SvgPicture.asset(Assets.imagesOnboardinglogo1),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.13,
+                height: MediaQuery.of(context).size.height * 0.10,
               ),
               const Text(
                 'Shape Your Financial Future',
                 style: AppStyles.styleBold20,
               ),
               const SizedBox(
-                height: 25,
+                height: 10,
               ),
               Text(
                 'invest your money By Starting With \n HEDG, and secure financial freedom',
                 style: AppStyles.styleMedium14
                     .copyWith(color: const Color(0xFF6E838F)),
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.06,
+              ),
+              SvgPicture.asset(Assets.imagesOnboardingpointer1),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.06,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  SvgPicture.asset(
+                    Assets.imagesOnboardingcontinuebutton,
+                  ),
+                  const SizedBox(
+                    width: 25,
+                  )
+                ],
               )
             ],
           ),
