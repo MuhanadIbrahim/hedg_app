@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class LoginBodyView extends StatelessWidget {
@@ -6,6 +5,16 @@ class LoginBodyView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(children: [
+      Container(
+        color: const Color(0xff1B506F),
+        width: double.infinity,
+        height: MediaQuery.of(context).size.height * 0.15,
+      ),
+      SizedBox(
+        width: double.infinity,
+        height: MediaQuery.of(context).size.height * 0.85,
+      )
+    ]);
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:hedg_app/Features/log_in/presentation/view/log_in_view.dart';
 import 'package:hedg_app/Features/onboarding/presentaion/view/onboarding2.dart';
 import 'package:hedg_app/core/utils/app_images.dart';
 import 'package:hedg_app/core/utils/app_styles.dart';
@@ -76,7 +77,7 @@ class Onboarding3BodyView extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => const Onboarding2View(),
+                      Get.to(() => const LoginView(),
                           transition: Transition.rightToLeftWithFade,
                           duration: kTabScrollDuration);
                     },
