@@ -15,8 +15,8 @@ class LoginBodyView extends StatelessWidget {
         Padding(
           padding:
               EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.25),
-          child: const Center(
-            child: CustomMainContentFieldLogView(),
+          child:  Center(
+            child: CustomMainContentFieldLogView(child:Column( children: [],   )),
           ),
         )
       ],
