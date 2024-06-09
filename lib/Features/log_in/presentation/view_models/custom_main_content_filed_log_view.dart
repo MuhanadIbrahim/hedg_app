@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomMainContentFieldLogView extends StatelessWidget {
-  Widget? child;
-   CustomMainContentFieldLogView({
-    this.child,
+ final  Widget child;
+   const CustomMainContentFieldLogView({
+    required this.child,
     super.key,
   });
 

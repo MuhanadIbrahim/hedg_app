@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:hedg_app/Features/log_in/presentation/view_models/custom_background_log_view.dart';
 import 'package:hedg_app/Features/log_in/presentation/view_models/custom_main_content_filed_log_view.dart';
+import 'package:hedg_app/Features/log_in/presentation/view_models/cutom_fied_decoration.dart';
 
 class LoginBodyView extends StatelessWidget {
   const LoginBodyView({super.key});
@@ -15,12 +17,19 @@ class LoginBodyView extends StatelessWidget {
         Padding(
           padding:
               EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.25),
-          child:  Center(
-            child: CustomMainContentFieldLogView(child:Column( children: [],   )),
+          child: Center(
+            child: CustomMainContentFieldLogView(
+                child: Column(
+              children: [
+                TextField(decoration: customDecoration('email')),
+                TextField(decoration: customDecoration('password')),
+              ],
+            )),
           ),
         )
       ],
     );
   }
-}
 
+  
+}
