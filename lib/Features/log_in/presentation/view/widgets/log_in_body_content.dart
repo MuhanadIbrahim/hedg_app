@@ -1,5 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
+import 'package:hedg_app/Features/sign_up/presentation/view_models/sign_up_view.dart';
 
 import '../../../../../core/utils/app_images.dart';
 import '../../../../../core/utils/app_styles.dart';
@@ -20,11 +24,11 @@ class LogInBodyContent extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          TextField(decoration: customDecoration('Email')),
+          TextField(decoration: customDecoration('Email', )),
           const SizedBox(
             height: 15,
           ),
-          TextField(decoration: customDecoration('Password')),
+          TextField(decoration: customDecoration('Password', )),
           const SizedBox(
             height: 15,
           ),
@@ -35,8 +39,11 @@ class LogInBodyContent extends StatelessWidget {
           const SizedBox(
             height: 15,
           ),
-          const CustomTextButtoun(
-            title: 'Log In',
+          GestureDetector(
+            onTap: () {},
+            child: const CustomTextButtoun(
+              title: 'Log In',
+            ),
           ),
           const SizedBox(
             height: 15,
@@ -61,18 +68,25 @@ class LogInBodyContent extends StatelessWidget {
           const SizedBox(
             height: 15,
           ),
-          RichText(
-            text: TextSpan(
-              children: [
-                TextSpan(
-                    text: 'Don\'t Have An Account ?  ',
-                    style: AppStyles.styleMedium14
-                        .copyWith(color: const Color(0xFF1B506F))),
-                TextSpan(
-                    text: 'Sign Up',
-                    style: AppStyles.styleBold14
-                        .copyWith(color: const Color(0xFF00BF54))),
-              ],
+          GestureDetector(
+            onTap: () {
+              Get.to(() => const SignUpView(),
+                  transition: Transition.rightToLeft,
+                  duration: kTabScrollDuration);
+            },
+            child: RichText(
+              text: TextSpan(
+                children: [
+                  TextSpan(
+                      text: 'Don\'t Have An Account ?  ',
+                      style: AppStyles.styleMedium14
+                          .copyWith(color: const Color(0xFF1B506F))),
+                  TextSpan(
+                      text: 'Sign Up',
+                      style: AppStyles.styleBold14
+                          .copyWith(color: const Color(0xFF00BF54))),
+                ],
+              ),
             ),
           ),
         ],
