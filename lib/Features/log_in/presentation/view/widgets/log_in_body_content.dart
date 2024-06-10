@@ -24,11 +24,17 @@ class LogInBodyContent extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          TextField(decoration: customDecoration('Email', )),
+          TextField(
+              decoration: customDecoration(
+            'Email',
+          )),
           const SizedBox(
             height: 15,
           ),
-          TextField(decoration: customDecoration('Password', )),
+          TextField(
+              decoration: customDecoration(
+            'Password',
+          )),
           const SizedBox(
             height: 15,
           ),
@@ -71,8 +77,7 @@ class LogInBodyContent extends StatelessWidget {
           GestureDetector(
             onTap: () {
               Get.to(() => const SignUpView(),
-                  transition: Transition.rightToLeft,
-                  duration: kTabScrollDuration);
+                  transition: Transition.fade, duration: kTabScrollDuration);
             },
             child: RichText(
               text: TextSpan(
