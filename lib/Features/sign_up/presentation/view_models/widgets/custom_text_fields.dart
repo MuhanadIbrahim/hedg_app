@@ -1,3 +1,5 @@
+import 'package:flag/flag_enum.dart';
+import 'package:flag/flag_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:hedg_app/core/utils/app_styles.dart';
 
@@ -52,4 +54,41 @@ TextField customPasswordTextField() {
           ),
           // customDecoration('Full Name', null)
         );
+  } Container customPhoneNumber() {
+    return Container(
+        height: 50.0,
+        width: double.infinity, // Set container height (adjust as needed)
+        padding: const EdgeInsets.all(2.0), // Add padding for content
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.grey, // Set border color
+            width: 0.5, // Set border width
+          ),
+          borderRadius:
+              BorderRadius.circular(8.0), // Add rounded corners (optional)
+        ),
+        child: Row(
+          children: [
+            const SizedBox(
+              width: 10,
+            ),
+            Flag.fromCode(FlagsCode.EG, height: 20.0, width: 20.0),
+            const SizedBox(
+              width: 10,
+            ),
+            const Text('+20'),
+            const SizedBox(
+              width: 10,
+            ),
+            Container(
+              width: 1.0, // Set divider width
+              color: Colors.grey[300], // Set divider color
+              height: double.infinity, // Expands vertically
+            ),
+            const SizedBox(
+              width: 10,
+            ),
+            const Text('Phone Number', style: AppStyles.styleMedium14),
+          ],
+        ));
   }
