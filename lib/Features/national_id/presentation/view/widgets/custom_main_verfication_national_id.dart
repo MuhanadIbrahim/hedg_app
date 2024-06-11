@@ -4,8 +4,10 @@ import 'package:hedg_app/core/utils/app_images.dart';
 import 'package:hedg_app/core/utils/app_styles.dart';
 
 class CustomMainVerficationNationalIdProcess extends StatelessWidget {
+  final String idcardpath;
+  final String idcheckpointer;
   const CustomMainVerficationNationalIdProcess({
-    super.key,
+    super.key, required this.idcardpath, required this.idcheckpointer,
   });
 
   @override
@@ -36,7 +38,7 @@ class CustomMainVerficationNationalIdProcess extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  '    ID Card (Front)',
+                  '    ID Card ($idcardpath)',
                   style: AppStyles.styleMedium18.copyWith(color: Colors.black),
                 ),
               ],
@@ -58,7 +60,7 @@ class CustomMainVerficationNationalIdProcess extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            SvgPicture.asset(Assets.addbutounnationalid)
+            SvgPicture.asset(idcheckpointer)
           ],
         ),
       ),

@@ -35,7 +35,10 @@ class NationalIdVerficationBodyView extends StatelessWidget {
         const SizedBox(
           height: 20,
         ),
-        const CustomMainVerficationNationalIdProcess(),
+        const CustomMainVerficationNationalIdProcess(
+          idcardpath: 'Front',
+          idcheckpointer: Assets.addbutounnationalid,
+        ),
         const SizedBox(
           height: 15,
         ),
