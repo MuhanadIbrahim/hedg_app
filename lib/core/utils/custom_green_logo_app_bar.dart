@@ -20,15 +20,23 @@ class CustomGreenLogoAppBar extends StatelessWidget {
           ),
         ],
       ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          SvgPicture.asset(Assets.imagesGreenhorizinatillogo),
-          SizedBox(
-            width: MediaQuery.of(context).size.width * 0.57,
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset(Assets.imagesGreenhorizinatillogo),
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.57,
+              ),
+              SvgPicture.asset(Assets.notication),
+            ],
           ),
-          SvgPicture.asset(Assets.notication),
+          const SizedBox(
+            height: 15,
+          )
         ],
       ),
     );
