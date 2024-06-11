@@ -113,4 +113,8 @@ class Assets {
   static const String nationlIdTracker2 = "assets/images/id_tracker2.svg";
 
   static const String notication = "assets/images/notication.svg";
+
+  static const String greenarrow = "assets/images/green_arrow.svg";
+
+  static const String greengraph = "assets/images/green_graph.svg";
 }
