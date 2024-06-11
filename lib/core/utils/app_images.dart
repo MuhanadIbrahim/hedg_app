@@ -109,4 +109,6 @@ class Assets {
   static const String nationlIdTracker = "assets/images/id_tracker.svg";
 
   static const String addbutounnationalid = "assets/images/add_id_buttoun.svg";
+
+  static const String nationlIdTracker2 = "assets/images/id_tracker2.svg";
 }

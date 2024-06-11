@@ -1,18 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:hedg_app/Features/national_id/presentation/view/national_id_view2.dart';
 import 'package:hedg_app/Features/national_id/presentation/view/widgets/custom_app_bar_natinal_id_verfication.dart';
+import 'package:hedg_app/Features/national_id/presentation/view/widgets/custom_main_verfication_national_id.dart';
 import 'package:hedg_app/Features/national_id/presentation/view/widgets/custom_rishText.dart';
 import 'package:hedg_app/Features/national_id/presentation/view/widgets/custom_text_buttoun_verfication_id.dart';
 import 'package:hedg_app/core/utils/app_images.dart';
 import 'package:hedg_app/core/utils/app_styles.dart';
 
-import 'custom_main_verfication_national_id.dart';
-
-class NationalIdVerficationBodyView extends StatelessWidget {
-  const NationalIdVerficationBodyView({super.key});
+class NationIdVerficationBodyView2 extends StatelessWidget {
+  const NationIdVerficationBodyView2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +18,7 @@ class NationalIdVerficationBodyView extends StatelessWidget {
         const SizedBox(
           height: 15,
         ),
-        SvgPicture.asset(Assets.nationlIdTracker),
+        SvgPicture.asset(Assets.nationlIdTracker2),
         const SizedBox(
           height: 30,
         ),
@@ -39,7 +35,7 @@ class NationalIdVerficationBodyView extends StatelessWidget {
           height: 20,
         ),
         const CustomMainVerficationNationalIdProcess(
-          idcardpath: 'Front',
+          idcardpath: 'Back',
           idcheckpointer: Assets.addbutounnationalid,
         ),
         const SizedBox(
@@ -62,13 +58,7 @@ class NationalIdVerficationBodyView extends StatelessWidget {
         const SizedBox(
           height: 15,
         ),
-        CustomTextButtounVerficationId(
-            onPressed: () {
-              Get.to(() => const NationIdVerficationView2(),
-                  transition: Transition.leftToRight,
-                  duration: kTabScrollDuration);
-            },
-            title: 'Save')
+        CustomTextButtounVerficationId(onPressed: () {}, title: 'Save')
       ],
     );
   }
