@@ -105,4 +105,6 @@ class Assets {
   /// assets/images/white horizintal logo.svg
   static const String imagesWhitehorizintallogo =
       "assets/images/white horizintal logo.svg";
+
+  static const String nationlIdTracker = "assets/images/id_tracker.svg";
 }
