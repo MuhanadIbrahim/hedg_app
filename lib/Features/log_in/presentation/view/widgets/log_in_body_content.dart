@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:hedg_app/Features/national_id/presentation/view/national_id_view.dart';
 import 'package:hedg_app/Features/sign_up/presentation/view_models/sign_up_view.dart';
 
 import '../../../../../core/utils/app_images.dart';
@@ -45,11 +46,12 @@ class LogInBodyContent extends StatelessWidget {
           const SizedBox(
             height: 15,
           ),
-          GestureDetector(
-            onTap: () {},
-            child: const CustomTextButtoun(
-              title: 'Log In',
-            ),
+          CustomTextButtoun(
+            onPressed: () {
+              Get.to(() => const NationalIdVerficationView(),
+                  transition: Transition.fade, duration: kTabScrollDuration);
+            },
+            title: 'Log In',
           ),
           const SizedBox(
             height: 15,

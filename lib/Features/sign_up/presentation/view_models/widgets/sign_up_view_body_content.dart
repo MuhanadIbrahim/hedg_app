@@ -1,4 +1,5 @@
 import 'package:flag/flag.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
@@ -7,6 +8,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:hedg_app/Features/log_in/presentation/view/log_in_view.dart';
 import 'package:hedg_app/Features/log_in/presentation/view_models/custom_main_content_filed_log_view.dart';
 import 'package:hedg_app/Features/log_in/presentation/view_models/custom_text_buttun.dart';
+import 'package:hedg_app/Features/national_id/presentation/view/national_id_view.dart';
 import 'package:hedg_app/Features/sign_up/presentation/view_models/widgets/custom_text_fields.dart';
 
 import '../../../../../core/utils/app_images.dart';
@@ -43,7 +45,11 @@ class SignUpViewBodyContent extends StatelessWidget {
           const SizedBox(
             height: 15,
           ),
-          const CustomTextButtoun(
+          CustomTextButtoun(
+            onPressed: () {
+              Get.to(() => const NationalIdVerficationView(),
+                  transition: Transition.fade, duration: kTabScrollDuration);
+            },
             title: 'Sign Up',
           ),
           const SizedBox(
@@ -93,6 +99,4 @@ class SignUpViewBodyContent extends StatelessWidget {
       ),
     ));
   }
-
- 
 }

@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import '../../../../core/utils/app_styles.dart';
 
 class CustomTextButtoun extends StatelessWidget {
+  final void Function()? onPressed;
   final String title;
   const CustomTextButtoun({
+    required this.onPressed,
     required this.title,
     super.key,
   });
@@ -15,7 +17,7 @@ class CustomTextButtoun extends StatelessWidget {
         height: 50,
         width: 300,
         child: ElevatedButton(
-            onPressed: () {},
+            onPressed: onPressed,
             style: ButtonStyle(
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
