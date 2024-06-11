@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/routes/transitions_type.dart';
+import 'package:hedg_app/Features/home/presentation/view/home_view.dart';
 import 'package:hedg_app/Features/national_id/presentation/view/widgets/custom_app_bar_natinal_id_verfication.dart';
 import 'package:hedg_app/Features/national_id/presentation/view/widgets/custom_main_verfication_national_id.dart';
 import 'package:hedg_app/Features/national_id/presentation/view/widgets/custom_rishText.dart';
@@ -58,7 +62,13 @@ class NationIdVerficationBodyView2 extends StatelessWidget {
         const SizedBox(
           height: 15,
         ),
-        CustomTextButtounVerficationId(onPressed: () {}, title: 'Save')
+        CustomTextButtounVerficationId(
+            onPressed: () {
+              Get.to(() => const HomeView(),
+                  transition: Transition.leftToRight,
+                  duration: kTabScrollDuration);
+            },
+            title: 'Save')
       ],
     );
   }
