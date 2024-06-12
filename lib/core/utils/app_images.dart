@@ -142,4 +142,19 @@ class Assets {
 
   static const String exploreinactiveicon =
       "assets/images/explore_inactive_icon.svg";
+
+  static const String conserativelogoisolated =
+      "assets/images/conservative_logo_isolated.svg";
+
+  static const String moderatedplanisoalted =
+      "assets/images/moderated_plan_isolated.svg";
+
+  static const String aggressiveplanisoalted =
+      "assets/images/aggresive_plan_isolated.svg";
+
+  static const String doityourselfisoalted =
+      "assets/images/do_it_you_self_isolated.svg";
+
+  static const String needguidanceisoalted =
+      "assets/images/need_guidence_isoalted.svg";
 }

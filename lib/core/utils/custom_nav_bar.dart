@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:hedg_app/Features/explore/presentation/view/explore_view.dart';
 import 'package:hedg_app/Features/home/presentation/view/home_view.dart';
 import 'package:hedg_app/Features/wallet/presentaion/view/wallet_view.dart';
 import 'package:hedg_app/core/utils/app_images.dart';
@@ -68,8 +69,8 @@ class _CustomNavBarState extends State<CustomNavBar> {
                           .copyWith(fontSize: 8, color: Colors.grey))),
           GestureDetector(
             onTap: () {
-              // Get.off(() => const HomeView(),
-              //     transition: Transition.fade, duration: kTabScrollDuration);
+              Get.off(() => const ExploreView(),
+                  transition: Transition.fade, duration: kTabScrollDuration);
               setState(() {
                 tappedIndex = 2;
               });

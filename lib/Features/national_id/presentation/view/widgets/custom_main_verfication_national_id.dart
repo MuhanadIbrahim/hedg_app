@@ -7,7 +7,9 @@ class CustomMainVerficationNationalIdProcess extends StatelessWidget {
   final String idcardpath;
   final String idcheckpointer;
   const CustomMainVerficationNationalIdProcess({
-    super.key, required this.idcardpath, required this.idcheckpointer,
+    super.key,
+    required this.idcardpath,
+    required this.idcheckpointer,
   });
 
   @override
@@ -20,10 +22,11 @@ class CustomMainVerficationNationalIdProcess extends StatelessWidget {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey,
-            offset: Offset(0.0, 1.0), //(x,y)
-            blurRadius: 6.0,
-          ),
+            color: Color(0x1910284A),
+            blurRadius: 4,
+            offset: Offset(0, 4),
+            spreadRadius: 0,
+          )
         ],
       ),
       child: Padding(
