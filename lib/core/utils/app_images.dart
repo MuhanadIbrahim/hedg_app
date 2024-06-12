@@ -4,7 +4,7 @@ class Assets {
   /// Assets for imagesAggressive plan logo
   /// assets/images/aggressive plan logo.svg
   static const String imagesAggressiveplanlogo =
-      "assets/images/aggressive plan logo.svg";
+      "assets/images/aggressive_plan.svg";
 
   /// Assets for imagesApple buttoun
   /// assets/images/apple buttoun.svg
@@ -13,12 +13,12 @@ class Assets {
   /// Assets for imagesConservative plan logo
   /// assets/images/conservative plan logo.svg
   static const String imagesConservativeplanlogo =
-      "assets/images/conservative plan logo.svg";
+      "assets/images/conserative_plan.svg";
 
   /// Assets for imagesCustomized plan logo
   /// assets/images/customized plan logo.svg
   static const String imagesCustomizedplanlogo =
-      "assets/images/customized plan logo.svg";
+      "assets/images/customized_plan.svg";
 
   /// Assets for imagesEgypt flag
   /// assets/images/egypt flag.svg
@@ -117,4 +117,29 @@ class Assets {
   static const String greenarrow = "assets/images/green_arrow.svg";
 
   static const String greengraph = "assets/images/green_graph.svg";
+
+  static const String greenprice = "assets/images/green_price.svg";
+
+  static const String redprice = "assets/images/red_price.svg";
+
+  static const String homeactiveicon = "assets/images/home_active_icon.svg";
+
+  static const String homeinactiveicon = "assets/images/home_inactive_icon.svg";
+
+  static const String walletactiveicon = "assets/images/wallet_active_icon.svg";
+
+  static const String walletinactiveicon =
+      "assets/images/wallet_inactive_icon.svg";
+
+  static const String personalactiveicon =
+      "assets/images/personal_active_icon.svg";
+
+  static const String personalinactiveicon =
+      "assets/images/personal_inactive_icon.svg";
+
+  static const String exploreactiveicon =
+      "assets/images/explore_active_icon.svg";
+
+  static const String exploreinactiveicon =
+      "assets/images/explore_inactive_icon.svg";
 }

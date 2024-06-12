@@ -1,6 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:hedg_app/Features/log_in/presentation/view_models/custom_text_buttun.dart';
 import 'package:hedg_app/core/utils/app_images.dart';
 import 'package:hedg_app/core/utils/app_styles.dart';
 
@@ -27,6 +28,9 @@ class PortfolioDetailsChart extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(children: [
+            const SizedBox(
+              width: 20,
+            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -83,11 +87,18 @@ class PortfolioDetailsChart extends StatelessWidget {
                 )
               ],
             ),
+            const SizedBox(
+              width: 20,
+            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [SvgPicture.asset(Assets.greengraph)],
             )
-          ])
+          ]),
+          const SizedBox(
+            height: 10,
+          ),
+          CustomTextButtoun(onPressed: () {}, title: 'Portfolio Details')
         ],
       ),
     );
