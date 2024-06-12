@@ -95,7 +95,12 @@ class PortfolioDetailsChart extends StatelessWidget {
           const SizedBox(
             height: 5,
           ),
-          CustomTextButtoun(onPressed: () {}, title: 'Portfolio Details')
+          CustomTextButtoun(
+            onPressed: () {},
+            title: 'Portfolio Details',
+            width: 280,
+            height: 35,
+          )
         ],
       ),
     );

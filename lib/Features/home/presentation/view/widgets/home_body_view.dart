@@ -25,7 +25,7 @@ class HomeBodyview extends StatelessWidget {
             height: 10,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 22.0, vertical: 5),
+            padding: EdgeInsets.symmetric(horizontal: 22.0, vertical: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -35,18 +35,20 @@ class HomeBodyview extends StatelessWidget {
                 ),
                 SizedBox(
                   width: 103.56,
-                  height: 10.70,
+                  height: 20.70,
                   child: Opacity(
                     opacity: 0.51,
-                    child: Text(
-                      'Orders',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 10,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w500,
-                        height: 0,
+                    child: Center(
+                      child: Text(
+                        'Orders',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 10,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w500,
+                          height: 0,
+                        ),
                       ),
                     ),
                   ),

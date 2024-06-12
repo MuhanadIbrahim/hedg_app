@@ -33,6 +33,9 @@ class CustomFinialPlan extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
+          const SizedBox(
+            width: 2,
+          ),
           Row(
             children: [
               Image.asset(
@@ -62,6 +65,9 @@ class CustomFinialPlan extends StatelessWidget {
               ),
               SvgPicture.asset(redGreenPrice)
             ],
+          ),
+          const SizedBox(
+            width: 2,
           )
         ],
       ),
