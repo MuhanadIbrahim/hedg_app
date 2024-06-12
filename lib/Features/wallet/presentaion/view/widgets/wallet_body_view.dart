@@ -11,27 +11,29 @@ class WalletBodyView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const CustomWalletAppBar(),
-        const SizedBox(
-          height: 20,
-        ),
-        const CustomAddReceipt(),
-        const SizedBox(
-          height: 20,
-        ),
-        const DateDepositedChart(),
-        const SizedBox(
-          height: 5,
-        ),
-        const Text('Funds will be added to your wallet after 1 working day!',
-            textAlign: TextAlign.center, style: AppStyles.styleRegular12),
-        const SizedBox(
-          height: 5,
-        ),
-        CustomTextButtoun(onPressed: () {}, title: 'Send Details')
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          const CustomWalletAppBar(),
+          const SizedBox(
+            height: 20,
+          ),
+          const CustomAddReceipt(),
+          const SizedBox(
+            height: 20,
+          ),
+          const DateDepositedChart(),
+          const SizedBox(
+            height: 5,
+          ),
+          const Text('Funds will be added to your wallet after 1 working day!',
+              textAlign: TextAlign.center, style: AppStyles.styleRegular12),
+          const SizedBox(
+            height: 5,
+          ),
+          CustomTextButtoun(onPressed: () {}, title: 'Send Details')
+        ],
+      ),
     );
   }
 }
