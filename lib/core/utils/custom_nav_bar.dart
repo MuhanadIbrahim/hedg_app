@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:hedg_app/Features/home/presentation/view/home_view.dart';
+import 'package:hedg_app/Features/wallet/presentaion/view/wallet_view.dart';
 import 'package:hedg_app/core/utils/app_images.dart';
 import 'package:hedg_app/core/utils/app_styles.dart';
 
@@ -12,7 +13,7 @@ class CustomNavBar extends StatefulWidget {
   State<CustomNavBar> createState() => _CustomNavBarState();
 }
 
-int tappedIndex = -1;
+int tappedIndex = 0;
 
 class _CustomNavBarState extends State<CustomNavBar> {
   @override
@@ -49,8 +50,8 @@ class _CustomNavBarState extends State<CustomNavBar> {
                           .copyWith(fontSize: 8, color: Colors.grey))),
           GestureDetector(
               onTap: () {
-                // Get.off(() => const HomeView(),
-                //     transition: Transition.fade, duration: kTabScrollDuration);
+                Get.off(() => const WalletView(),
+                    transition: Transition.fade, duration: kTabScrollDuration);
                 setState(() {
                   tappedIndex = 1;
                 });
