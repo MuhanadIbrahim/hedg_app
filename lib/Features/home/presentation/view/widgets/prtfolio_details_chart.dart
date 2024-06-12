@@ -27,7 +27,7 @@ class PortfolioDetailsChart extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(children: [
+          Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -88,7 +88,7 @@ class PortfolioDetailsChart extends StatelessWidget {
               width: 5,
             ),
             Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [SvgPicture.asset(Assets.greengraph)],
             )
           ]),
