@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hedg_app/core/utils/app_styles.dart';
 
-class CustomWalletAppBar extends StatelessWidget {
-  const CustomWalletAppBar({super.key});
+class ProfileAppBar extends StatelessWidget {
+  const ProfileAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class CustomWalletAppBar extends StatelessWidget {
                   color: Color(0xff10284A),
                 )),
             Text(
-              'Confirm Deposit',
+              'My Account',
               style: AppStyles.styleBold14
                   .copyWith(color: const Color(0xff10284A)),
             ),

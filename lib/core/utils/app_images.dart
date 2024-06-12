@@ -157,4 +157,6 @@ class Assets {
 
   static const String needguidanceisoalted =
       "assets/images/need_guidence_isoalted.svg";
+
+  static const String profilelogo = "assets/images/profile_logo.png";
 }

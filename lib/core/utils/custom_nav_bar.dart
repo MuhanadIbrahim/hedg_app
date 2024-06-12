@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:hedg_app/Features/explore/presentation/view/explore_view.dart';
 import 'package:hedg_app/Features/home/presentation/view/home_view.dart';
+import 'package:hedg_app/Features/profile/presentation/view/profile_view.dart';
 import 'package:hedg_app/Features/wallet/presentaion/view/wallet_view.dart';
 import 'package:hedg_app/core/utils/app_images.dart';
 import 'package:hedg_app/core/utils/app_styles.dart';
@@ -88,8 +89,8 @@ class _CustomNavBarState extends State<CustomNavBar> {
           ),
           GestureDetector(
             onTap: () {
-              // Get.off(() => const HomeView(),
-              //     transition: Transition.fade, duration: kTabScrollDuration);
+              Get.off(() => const ProfileView(),
+                  transition: Transition.fade, duration: kTabScrollDuration);
               setState(() {
                 tappedIndex = 3;
               });
