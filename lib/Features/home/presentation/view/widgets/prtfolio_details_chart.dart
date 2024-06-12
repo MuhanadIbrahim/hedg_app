@@ -28,9 +28,6 @@ class PortfolioDetailsChart extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(children: [
-            const SizedBox(
-              width: 20,
-            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -88,15 +85,15 @@ class PortfolioDetailsChart extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              width: 20,
+              width: 5,
             ),
             Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [SvgPicture.asset(Assets.greengraph)],
             )
           ]),
           const SizedBox(
-            height: 10,
+            height: 5,
           ),
           CustomTextButtoun(onPressed: () {}, title: 'Portfolio Details')
         ],
